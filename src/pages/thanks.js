@@ -4,7 +4,6 @@
 // Import React and Gatsby
 import React from 'react'
 import { graphql } from 'gatsby'
-import { navigateTo } from 'gatsby-link'
 
 // Import Utilities and Style Elements
 import { 
@@ -22,8 +21,8 @@ const ThanksPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Contact" />
       <Container>
-        <h1>Thank you!</h1>
-        <p>This is a custom thank you page for form submissions</p>
+        <h1>You message has been sent.</h1>
+        <p>Thank you for getting in touch. I'll will get back to you shortly.</p>
       </Container>
     </Layout>
   )

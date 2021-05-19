@@ -8,7 +8,9 @@ import Theme from './src/themes/theme'
 
 //Logic for Global Styles
 const GlobalStyles = createGlobalStyle`
-	* {
+	*, 
+	*:before, 
+	*:after {
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;

@@ -74,6 +74,11 @@ import {
   CopyrightInfo, 
 } from './footer'
 
+import {
+  ContactForm,
+  ContactFormButton,
+} from './form'
+
 import { 
   ContainerHeader, 
   ContainerSVG,
@@ -189,6 +194,9 @@ export {
   HeroInternalLink,
   HeroHrefNavLink,
 
+  ContactForm,
+  ContactFormButton,
+  
   InternalLink,
   HrefLink,
   HrefNavLink,
