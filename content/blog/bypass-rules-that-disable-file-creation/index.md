@@ -3,9 +3,7 @@ type: post
 draft: false
 published: true
 title: Why File Redirection is Important
-moduleTitle: Command Line Fun
-moduleSection: 3
-moduleSubsection: 2
+description: "Command Line Fun Module 3.2"
 slug: using-file-redirection
 author: Martin Guzman
 date: 2021-05-13
@@ -17,9 +15,9 @@ tags:
 - OSCP
 ---
 
-This post will go over OSCP syllabus section 3.2 and how file redirection can be use to circumvent basic file creation rules on a target machine. I will discuss how we can bypass these rules when a target machine is not properly secured. This topic is important as it ties into Scripts, Netcat, Powercat, and creating Reverse Shells later on 😉. Time to get started!
+This post will go over OSCP Syllabus Module 3.2 and how file redirection can be use to circumvent basic file creation rules on a target machine. I will discuss how we can bypass these rules when a target machine is not properly secured. This topic is important as it ties into Scripts, Netcat, Powercat, and creating Reverse Shells later on #:wink:. Time to get started!
 
-## Checking for Enabled Text Editors
+## Check for Text Editors
 First, check if any text editors are still enabled on the target machine. If we are lucky, one of these was not disabled and it just saved ourselves time.
 
 The following commands will attempt to: 
@@ -58,8 +56,7 @@ If none of the attempts above worked, let us give kudos #:thumbsup: to the admin
 ## Redirection
 Now, it is time for us to check the depth of the security protocols in place by trying redirect commands.
 
-The following command is used to:
-##### Redirect to a new file
+##### Redirect to a new file:
 ```shell
 ┌──(kali㉿kali)-[~/Desktop]
 └─$ echo “text_or_command_you_want_to_save” > Filename_Here  
@@ -68,7 +65,8 @@ Above shows the line `text_or_command_you_want_to_save` redirected into a new fi
 
 ##### Redirect to an existing file and delete everything inside:
 
-**REMEMBER THIS DELETES WHAT WAS INSIDE THE FILE**
+> Important: This will delete what was inside the file!
+
 ```shell
 ┌──(kali㉿kali)-[~/Desktop]
 └─$ echo "deleting everything then Adding this line new line inside the file" > Existing_Filename_Here 
@@ -80,15 +78,17 @@ Above shows an existing file being erased and replaced with the line `deleting e
 ┌──(kali㉿kali)-[~/Desktop]
 └─$ echo "Adding this to the end of the example document" >> test.sh   
 ```
-The above shows the line `Adding this to the end of the example document` being added to the end of the file called `test.sh`.   
-**This can be used to append files and build scripts one line at a time. This is important to understand for future posts** 
+The above shows the line `Adding this to the end of the example document` being added to the end of the file called `test.sh`. 
+
+This can be used to append files and build scripts one line at a time. This is important to understand for future posts. 
 
 ##### Give the file (a script for example) execution rights: 
 ```shell
 ┌──(kali㉿kali)-[~/Desktop]
 └─$ chmod +x test.sh   
 ```
-**IMPORTANT: Only give execution rights after the script is finalized, it can be troublesome to edit the file afterward.**
+
+> Important: Only give execution rights after the script is finalized, it can be troublesome to edit the file afterward.
 
 ## Stderr
 Stderr is the stream used to output an error message when a program encounters them. This is useful when you create a log file then redirect the errors to the log file or even hide the error messages entirely.
@@ -112,7 +112,7 @@ Above shows the stderr output `cp: cannot stat 'Fake_File': No such file or dire
 
 Inside the terminal is the common way stderr is shown. But sometimes stderr can be redirected to a log file. Redirecting Stderr is useful when we want to create a log file that will contain only errors and not include the stdout.
 
-In the next example, I will attempt to copy a file that does not exist and send the stderr output to a log file called Log_For_Fake_File.txt
+In the next example, I will attempt to copy a file that does not exist and send the stderr output to the log file **Log_For_Fake_File.txt**.
 
 ```shell
 ┌──(kali㉿kali)-[~/Desktop]
@@ -133,10 +133,12 @@ Hashcat   ipscan.desktop          MD5test.txt             Ophcrack         Tutor
 Above shows no error message displayed in the terminal and also shows that the log file was created.
 
 Now lets have a look inside the log file to see if the stderr was successfully redirected there:
+
 ```shell
 ┌──(kali㉿kali)-[~/Desktop]
 └─$ less Log_For_Fake_File.txt      
 ```	
+
 This opens the following in a new window.
 ```shell
 cp: cannot stat 'fake_file': No such file or directory
@@ -149,6 +151,6 @@ If you wanted to silence the stderr output from being displayed in the console b
 
 ## Why This is Useful
 
-Now we should have a better understanding of what these commands do and why learning to redirect and create a file manually is a crucial step for ethical hacking and cyber security. It is vital we learn to pivot, as all other file creation methods may be disabled due to security measures and only redirection may work. 
+Understanding these commands and learning to redirect and create a file manually is a crucial step for ethical hacking and cyber security. It is vital we learn to pivot, as all other file creation methods may be disabled due to security measures and only redirection may work. 
 
 This is important because it will allow scripts to be created and ran from a target machine when Pentesting, OSCP exam, and for CTF competitions. This is also insightful for Administrators to understand the importance of file creation rules and how advisories can circumvent them with these simple techniques.
