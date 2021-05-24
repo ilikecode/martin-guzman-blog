@@ -38,7 +38,7 @@ const AboutPage = ({ data, location }) => {
         <section id="overview">
           <h1>I'm Martin.</h1>
           <HeroParagraph>Originally from Southern California, now living in Vancouver, BC, and I'm currently studying for my OSCP Certification.</HeroParagraph> 
-          <HeroParagraph>I'm a self-starter and top-ranked NCL CTF competitor, with a strong analytical mindset with skills in OSINT, penetration testing, scripting, security, and experience in multiple OS platforms. I have a passion for Cybersecurity, OSINT, CTF's and interested in making a difference.</HeroParagraph>
+          <HeroParagraph>A self-starter with a strong analytical mindset and a friendly personality. Skills in EDR/EPP, penetration testing, open-source intelligence, and scripting. Experienced with multiple OS platforms including Linux, Windows, Mac, IOS, Android, and more. Constantly learning new cybersecurity skills and researching the latest technology. Also, a top-ranked <CopyIntroInternalLink to="#ncl-highlights">National Cyber League Competitor</CopyIntroInternalLink>  who loves the challenge of testing my skillset against others and continually improving my knowledge and rankings.</HeroParagraph>
           <HeroParagraph>Authorized to work in Canada and the United States.</HeroParagraph> 
         </section>
       </Container>
@@ -46,14 +46,16 @@ const AboutPage = ({ data, location }) => {
         <ContainerArticle>
           <section id="ctf">
             <h2>Capture the Flag Competitions</h2>
-            <p>Every competition I compete in I have climbed and progressed, but I still push myself to fill in the skill gaps that are pointed to me for each unanswered question. I see my flaws and understand I can do better and learn more and has taught me that looking at my shortcomings in a critical way is not negative but is a positive thing when I can learn from them.</p>
-            <p>Cyber security competitions have been a great way to practice my skillsets in realistic situations where time constraints and accuracy. In these competitions, participants race against the clock to fight threats, solve specific challenges, or come up with innovative cyber security strategies. .</p>
-            <p> problem-solving into action </p>
-            <p>I enjoy the challenge of having to solve a variety of tasks, think outside the box on having to work with the resources and tools and modifying them. How to improve apon them.</p>
+            <p>Cyber security competitions have been a great way to practice my skillsets in a realistic and hands-on situation where time constraints and accuracy matter.</p>
+            <p>In these competitions, the thought of competing against others was scary at first. Learning to push past that initial fear enabled me to gain knowledge and insight that would otherwise have been lost. It uncovered weaknesses and skill gaps I possessed, helping me self-improve and fix my shortcomings.</p>
+            <p>Pushing my ego aside and using the competition as a learning experience was of great benefit to my overall skillsets. Even though each competition I have climbed and progressed, I always strive to better and address each unanswered question that is encountered.</p>
           </section>
           <section id="ncl">
             <h2 id="ncl-highlights">National Cyber League Highlights</h2>
             <p>The National Cyber League (NCL) is a performance-based capture-the-flag style cybersecurity competition. The competition consists of nine domains; cryptography, enumeration and exploitation, forensics, log analysis, network traffic analysis, open source intelligence, password cracking, scanning, and web application exploitation.</p>
+
+
+
             <h3>NCL Spring 2021 Ranking Highlights</h3> 
             <ListIcon>
               <li>Top 150 Overall Individual Games Medalist</li>
@@ -86,6 +88,10 @@ const AboutPage = ({ data, location }) => {
             <h2 id="tracelabs">Trace Labs Global OSINT CTF</h2>
             <p>Trace Labs is a Not-For-Profit organization with the mission of crowdsourcing the collection of OSINT to generate new leads on missing persons cases to assist law enforcement.</p>
             <p>In the winter of 2021, I participated in Trace Labs' Global OSINT Search Party CTF 2021. The <a href="https://www.tracelabs.org/initiatives/search-party" target="blank">Trace Labs Search Party CTF</a> is a non theoretical, gamified effort that allows for the crowdsourcing of contestants to perform a single task: Conduct open source intelligence operations to help find missing persons.</p>
+            <p>During the CTF, I assisted junior team members on how to structure OSINT data, decipher any usable information obtained within it, use AI facial recognition tools to verify missing persons' hidden social media accounts and photographs, and explain to them the importance of documenting and preserving the data.</p>
+            <p>This information would then be passed to judges for approval and finally accepted by law enforcement agencies to aid in missing person’s cases.</p>
+            <p>Not only was it an opportunity to compete as a team with other skilled OSINT peers but to help fellow junior team members experience the satisfaction of compiling and submitting valid OSINT data that will directly help ongoing investigations for a good cause.</p>
+            <p>This CTF was tough because it forced me to put my personal feelings about each investigation aside and focus on working as a team, mentoring the junior members, aid law enforcement investigations with pertinent data, to help find the children and other missing persons associated with abduction, human trafficking, and cold cases.</p>
             </section> 
             <section id="education">
               <h2>Education Highlights</h2> 
