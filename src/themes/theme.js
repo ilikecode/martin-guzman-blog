@@ -16,7 +16,7 @@ export default {
 	  purple2: "hsl(245, 65%, 59%)", // #5E52DA rgba(94, 82, 218, 1)
 	  purple3: "hsl(245, 80%, 74%)", // #9088F2 rgba(144, 136, 242, 1)
 	  purple4: "hsl(245, 94%, 87%)", // #C4BFFD rgba(196, 191, 253, 1) 
-		purple5: "hsl(245, 11%, 95%)", // #DAD8F2 rgba(218, 216, 242, 1)
+		purple5: "hsl(240, 5%, 96%)", // #EAEAF6 rgba(234, 234, 246, 1)
 	},
 	breakpoints: {
 		xSmall: "only screen and (max-width: 40rem)",
@@ -35,8 +35,8 @@ export default {
 	sizes: {
 		maxWidth: "35rem",
 		maxTitle: "30rem",
-		maxText: "20rem",
-		maxCode: "22rem",
+		maxText: "23rem",
+		maxCode: "23rem",
 		xsWidth: "15rem",
 		smWidth: "20rem",
 		medWidth: "25rem",
