@@ -7,14 +7,14 @@ import { Container, } from '../elements'
 
 // Import Components
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Disclaimer = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Disclaimer" />
+      <Seo title="Disclaimer" />
       <Container>
         <h1>Statement of Use and Disclaimer of Liability</h1>
         <h3>Aim of Website</h3>
@@ -35,7 +35,6 @@ const Disclaimer = ({ data, location }) => {
         <p>The information and material contained on this website is for educational purposes only. You should not rely upon the information and material on this website as a basis of making any business, legal or any other decisions.</p>
         <p>Our goal is to keep the information and material up to date and correct, however this website makes no representations or warranties of any kind, express or implied about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information or material contained on the website for any purpose. Any reliance you place on such material is therefore strictly at your own risk.</p>
         <p>This website is not a hacking group or affiated with any hacking groups.</p>
-
       </Container>
     </Layout>
   )
