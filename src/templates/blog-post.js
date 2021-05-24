@@ -10,13 +10,11 @@ import { graphql } from 'gatsby'
 import { 
   Container, 
   ContainerArticleNavigation,
-  ContainerTwoColumns,
-  HeroText, 
-  HeroTitle,
-  HeroArticleInfo,
-  HeroModuleInfo,
-  HeroContainerTagList,
-  ArticlePost,    
+  ContainerTwoColumnsFlex,
+  ContainerArticle,
+  ArticlePost, 
+  ArticleSubtitle,
+  ArticleDateTime,   
   ArticleLink, 
   ArticleNav, 
   ArticleNextPreviousNav, 
@@ -29,8 +27,7 @@ import {
 
 // Import Components
 import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Hero from '../components/hero/hero'
+import Seo from '../components/seo'
 import TagListLinks from '../components/taglist-links'
 import StickyContainer from '../components/stickycontainer'
 import ToC from '../components/toc'
@@ -41,37 +38,32 @@ const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
-  const { tags = [], title, moduleTitle, moduleSection, moduleSubsection, date, readTime } = post.frontmatter
+  const { tags = [], title, date, description, readTime } = post.frontmatter
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
+      <Seo
         title={`Article: ${title}`}
         description={post.frontmatter.description || post.excerpt}
       />
-    
-      <Hero>
-        <HeroText>
-          <HeroModuleInfo>{moduleTitle}: Module {moduleSection}.{moduleSubsection}</HeroModuleInfo>
-          <HeroTitle>{title}</HeroTitle>
-          <HeroArticleInfo>{date} | {readTime} Minute Read</HeroArticleInfo>
-                    <HeroContainerTagList>
-            <TagListLinks tags={tags} />
-          </HeroContainerTagList>
-        </HeroText>
-      </Hero>
-
       <Container>
-        <ContainerTwoColumns>
-          <ArticlePost itemScope itemType="http://schema.org/Article" > 
-            <section id="content" dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
-             <Bio />
-          </ArticlePost>
-          <StickyContainer>
-            <ToC headings={post.headings} />
-          </StickyContainer>
-        </ContainerTwoColumns>
+        <ArticleSubtitle>{description}</ArticleSubtitle>
+        <h1>{title}</h1>
+        <TagListLinks tags={tags} />
+        <ArticleDateTime>{date} | {readTime} Minute Read </ArticleDateTime>
       </Container>
+      <ContainerTwoColumnsFlex>
+        <ContainerArticle>
+          <ArticlePost itemScope itemType="http://schema.org/Article" >           
+            <section id="content" dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
+            <TagListLinks tags={tags} />
+            <Bio />
+          </ArticlePost>
+        </ContainerArticle>
+        <StickyContainer>
+            <ToC headings={post.headings} />
+        </StickyContainer>
+      </ContainerTwoColumnsFlex>
       <ContainerArticleNavigation>
         <ArticleNextPreviousNav role="navigation" aria-label="Next Previous Articles">
           <ArticleNav>
@@ -96,6 +88,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </ArticleNav>
         </ArticleNextPreviousNav>
       </ContainerArticleNavigation>
+
     </Layout>
   )
 }
@@ -127,9 +120,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        moduleTitle
-        moduleSection
-        moduleSubsection
+        description
         tags
         readTime
         date(formatString: "MMMM DD, YYYY")
