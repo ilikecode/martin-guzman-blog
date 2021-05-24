@@ -15,12 +15,12 @@ const ToC = ({ headings }) => (
     <TocUl>
       <TocHeader id="id-1">Table of Contents</TocHeader>
         {headings.map(heading => {
-          if (heading.depth > 3) {
+          if (heading.depth > 2) {
             return <div />
           }
           return (
-            <TocLi key={heading.value}>
-              <TocLink href={`#${heading.value.replace(/\s+/g, "-").toLowerCase()}`} 
+            <TocLi>
+              <TocLink  key={heading.value} href={`#${heading.value.replace(/\s+/g, "-").toLowerCase()}`} 
                 aria-label="Table of Contents"
                 role="button"
               >

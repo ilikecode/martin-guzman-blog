@@ -23,9 +23,21 @@ const ToCAbout = ({ isActive }) => {
           aria-label="Table of Contents"
           role="button"
           />
-        </TocLi>  
+        </TocLi> 
         <TocLi>
-          <TocAnchorLink to="/about#ncl" title="NCL & CTFs Highlights" 
+          <TocAnchorLink to="/about#ctf" title="CTF Participation" 
+          aria-label="Table of Contents"
+          role="button"
+          />
+        </TocLi> 
+        <TocLi>
+          <TocAnchorLink to="/about#ncl" title="NCL Highlights" 
+          aria-label="Table of Contents"
+          role="button"
+          />
+        </TocLi>
+        <TocLi>
+          <TocAnchorLink to="/about#tracelabs" title="Trace Labs OSINT CTF" 
           aria-label="Table of Contents"
           role="button"
           />

@@ -5,11 +5,14 @@
 // Import React and Gatsby
 import React from 'react'
 
+// Import Utilities and Style Elements
+import { ListTagName } from '../elements/'
+
 const TagList = props => {
   return (
     <React.Fragment>
       {props.tags.map((tag) => (
-        <div key={tag}>{tag}</div>
+        <ListTagName key={tag}>{tag}</ListTagName>
       ))}
     </React.Fragment>
   )

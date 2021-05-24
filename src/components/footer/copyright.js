@@ -8,6 +8,6 @@ import { Link } from 'gatsby'
 import { CopyrightInfo } from '../../elements'
 
 const Copyright = () => {
-  return <CopyrightInfo>© {new Date().getFullYear()}, <Link to="/">Martin Guzman</Link>. <Link to="/disclaimer">The Disclaimer</Link></CopyrightInfo>
+  return <CopyrightInfo>© {new Date().getFullYear()}, <Link to="/">Martin Guzman</Link>. <Link to="/disclaimer">The Disclaimer</Link>.</CopyrightInfo>
 }
 export default Copyright

@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { BioContainer, BioIcon, BioDescription, HrefLink } from '../elements/'
 
 // Import Components
-import SVGMartin from './svg/svg-martin' 
+import SVGMartin from './svg/svgmartin' 
 
 const Bio = () => {
   const data = useStaticQuery(graphql`

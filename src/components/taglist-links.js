@@ -2,7 +2,6 @@
     Each tag is linked to a page of it's respective tagged name.
 */
 import React from 'react'
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
  // Utilities and Style Elements

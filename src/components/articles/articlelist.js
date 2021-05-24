@@ -15,7 +15,7 @@ const ArticleList = ({ posts }) => {
   return (
     <ContainerCardGrid>
       {posts.map(post => {
-      	return <Article key={post.id} {...post}></Article>
+      	return <Article key={post.id} {...post} ></Article>
       })}
     </ContainerCardGrid>	
   )
