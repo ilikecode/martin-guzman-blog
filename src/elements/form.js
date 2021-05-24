@@ -11,17 +11,19 @@ export const ContactForm = styled.form`
   font-family: ${props => props.theme.fonts.main};
   width: 100%;
   max-width: 16rem;
+  padding-top: .5rem;
 
   label {
+    font-weight: 400;
     margin-bottom: 0.25rem;
   }
 
   input,
   textarea {
-    font-size:  0.75rem;
+    font-family: ${props => props.theme.fonts.main};
+    font-size:  0.65rem;
     font-weight: 300;
     border: 1px solid ${props => props.theme.colors.purple2};
-    font-family: ${props => props.theme.fonts.main};
     margin-bottom: 0.75rem;
     padding: 0.15rem;
     width: 100%;
@@ -57,13 +59,13 @@ export const ContactFormButton = styled.button`
   box-shadow: ${props => props.theme.shadows.shadow1}; 
 
   &:after{
-  content:"Submit";
-  position:absolute;
-  width:100%;
-  height:100%;
-  left:0;
-  text-align:center;
-  transition: all 1000ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    content:"Submit";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    text-align:center;
+    transition: all 1000ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
   }
 
   &:before {

@@ -4,10 +4,28 @@ import styled from 'styled-components'
 
 export const ArticlePost = styled.article`
   width: 100%;
-  grid-area: article;
-  @media (min-width: 800px) {
-    padding-top: 1rem;
-  }
+`
+
+export const ArticleDateTime = styled.div`
+  align-self: flex-start;
+  color: black;
+  font-size: .65rem;
+  line-height: 1.65rem;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding-top: calc(16px + (16 - 8) * (100vw - 600px) / (1200 - 600));
+  padding-top: 0rem;
+  padding-bottom: .5rem;
+`
+
+export const ArticleSubtitle = styled.h2`
+  align-self: flex-start;
+  color: ${props => props.theme.colors.purple2};
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding-bottom: 0;
 `
 
 export const ArticleLink = styled(Link)`
@@ -26,7 +44,7 @@ export const ArticleNextPreviousNav = styled.nav`
   padding: 1.16rem 0;
 
   @media only screen and (min-width : 768px) {
-    padding: 1.72rem 0;
+    padding: .70rem 0;
   }
 `
 

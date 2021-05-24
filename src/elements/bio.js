@@ -21,6 +21,8 @@ export const BioIcon = styled.div`
 `
 
 export const BioDescription = styled.div`
+  display: flex;
+  align-items: center;
   p {
     font-size: 0.64rem;
     line-height: .96rem;

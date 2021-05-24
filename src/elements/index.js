@@ -15,7 +15,9 @@ import {
 } from './about'
 
 import { 
-  ArticlePost,    
+  ArticlePost,
+  ArticleSubtitle,
+  ArticleDateTime,    
   ArticleLink, 
   ArticleNav, 
   ArticleNextPreviousNav, 
@@ -64,9 +66,11 @@ import {
   Container, 
   ContainerArticleNavigation,
   ContainerTwoColumns, 
-  ContainerAbout,
+  ContainerTwoColumnsFlex,
+  ContainerArticle,
   ContainerAside,
   ContainerCardGrid,
+  ContainerWrapper,
  } from './containers'
 
 import { 
@@ -86,18 +90,7 @@ import {
 } from './header'
 
 import { 
-  HeroContainer, 
-  HeroContent,
-  HeroText, 
-  HeroTitle,
-  HeroArticleInfo,
-  HeroModuleInfo,
-  HeroContainerTagList,
-  HeroTagLinks,
-  HeroIntroduction,
-  HeroLinksContainer,
-  HeroInternalLink,
-  HeroHrefNavLink,
+  HeroParagraph,
 } from './hero'
 
 import {  
@@ -106,12 +99,15 @@ import {
   HrefNavLink,
   ContainerMenu,
   ContainerMenuTOC,
-  TagLink
+  TagLink,
+  CopyInternalLink,
+  CopyIntroInternalLink,
 } from './links-hrefs'
 
 import { 
   ListIcon,
   ListTags,
+  ListTagName,
 } from './lists'
 
 import { 
@@ -131,7 +127,9 @@ export {
   Footnote,
   SupElement,
 
-  ArticlePost,    
+  ArticlePost,
+  ArticleSubtitle, 
+  ArticleDateTime,   
   ArticleLink, 
   ArticleNav, 
   ArticleNextPreviousNav, 
@@ -170,9 +168,11 @@ export {
   Container, 
   ContainerArticleNavigation,
   ContainerTwoColumns, 
-  ContainerAbout,
+  ContainerTwoColumnsFlex,
+  ContainerArticle,
   ContainerAside,
   ContainerCardGrid,
+  ContainerWrapper,
 
   ContainerFooter, 
   CopyrightInfo, 
@@ -181,18 +181,7 @@ export {
   ContainerSVG, 
   LinkLogo,
 
-  HeroContainer, 
-  HeroContent,
-  HeroText, 
-  HeroTitle,
-  HeroArticleInfo,
-  HeroModuleInfo,
-  HeroContainerTagList,
-  HeroTagLinks,
-  HeroIntroduction,
-  HeroLinksContainer,
-  HeroInternalLink,
-  HeroHrefNavLink,
+  HeroParagraph,
 
   ContactForm,
   ContactFormButton,
@@ -203,9 +192,12 @@ export {
   ContainerMenu,
   ContainerMenuTOC,
   TagLink,
+  CopyInternalLink,
+  CopyIntroInternalLink,
 
   ListIcon,
   ListTags,
+  ListTagName,
 
   TocHeader,
   TocUl,

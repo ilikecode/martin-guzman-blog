@@ -4,13 +4,13 @@ import styled from 'styled-components'
  
 export const ContainerHeader = styled.header`
   display: flex;
-  flex-flow: row no-wrap;
+  flex-direction: row; 
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;  
-  position: relative;
   margin: 0 auto;
   top:0;
-  padding: 0 .25rem .25rem .25rem;  
+  padding: .25rem 1rem;
   background: transparent;
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};

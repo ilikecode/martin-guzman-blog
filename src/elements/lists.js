@@ -31,9 +31,15 @@ export const ListTags = styled.ul`
   align-items: top;  
   font-size: .65rem;
   line-height: 1rem;
+  padding-bottom: 0.5rem;
+
 	li { 
     list-style-type: none;
-    margin: 5px;
-    padding: 2px;
+    margin: 8px;
+    margin-left: 0;
 	}
+`
+
+export const ListTagName = styled.li`
+	line-height: 1.65em;
 `

@@ -14,9 +14,10 @@ export const ViewAllButton = props => {
 
 export const ContainerViewAll = styled.div`
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;  
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;  
   width: 100%;
   text-decoration: none;
 `
@@ -25,7 +26,8 @@ export const ViewAllLink = styled(Link)`
   color: ${props => props.theme.colors.purple1};
   cursor: pointer;
   display: flex;
-  flex-direction: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   line-height: .8rem;
   padding: .5rem .5rem .5rem 0;
   text-decoration: none;
@@ -33,10 +35,10 @@ export const ViewAllLink = styled(Link)`
 `
  
 export const ViewAllArrow = styled.svg`
-  stroke: ${props => props.theme.colors.purple1};
+  stroke: ${props => props.theme.colors.purple3};
   transition: all 300ms ease-in-out;
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
 	margin-top: 0;
 
   @media ${props => props.theme.breakpoints.small} {
@@ -53,7 +55,8 @@ export const ViewAllArrow = styled.svg`
 
 export const ViewAllText = styled.div`
   color: ${props => props.theme.colors.purple2};
-  font-size: calc(24px + (8 - 4) * (100vw - 600px) / (1200 - 600));
+  font-size: calc(18px + (8 - 4) * (100vw - 600px) / (1200 - 600));
+  font-size: 0.65rem;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: .03em;

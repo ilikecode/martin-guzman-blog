@@ -35,15 +35,17 @@ export const ParagraphDate = styled(ParagraphInfo)`
 
 export const Footnote = styled.cite`
   display: block;
-  color: ${props => props.theme.colors.grey1};
+  color: ${props => props.theme.colors.grey2};
   font-size: calc(14px + (4 - 2) * (100vw - 600px) / (1200 - 600));
+  font-size: 0.65rem;
   font-weight: 400;
   line-height: .85rem;   padding-bottom: calc((1rem - 1rem) + 0.65rem);
+  max-width: ${props => props.theme.sizes.medWidth};
 `
 
 export const SupElement = styled.sup`
   display: inline-block;
   color: black;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
 `

@@ -22,7 +22,8 @@ export const CardCategory = styled(Card)`
 
 export const CardCategoryInfo = styled.div`  
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: baseline;
   position: absolute;  
   top: 20px;

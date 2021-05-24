@@ -57,7 +57,7 @@ export const CardTagList = styled.div`
 export const CardTitle = styled.div`  
   display: inline;
   position: absolute;  
-  top: 130px;
+  top: 135px;
   left: 32px;  
   z-index: 3;
   color: ${props => props.theme.colors.black};
@@ -88,6 +88,7 @@ export const CardReadMoreContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;  
+  justify-content: flex-start;
   width: 100%;
   z-index: 3;
   text-decoration: none;
@@ -103,12 +104,12 @@ export const CardReadMore = styled.div`
   z-index: 3;
   text-decoration: none;
 
-${Card}:hover & {
-  text-decoration: none;
-  color: ${props => props.theme.colors.grey3};
-  opacity: .9;
-  transition: color 500ms ease-in-out,
-              opacity 500ms ease-in-out;
+  ${Card}:hover & {
+    text-decoration: none;
+    color: ${props => props.theme.colors.grey3};
+    opacity: .9;
+    transition: color 500ms ease-in-out,
+                opacity 500ms ease-in-out;
   }
 `
 
