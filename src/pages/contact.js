@@ -6,16 +6,16 @@ import React, { useState } from 'react'
 import { graphql, navigate } from 'gatsby'
 
 // Import Utilities and Style Elements
-import styled from "styled-components"
 import { 
   Container, 
   ContactForm,
-  ContactFormButton
+  ContactFormButton,
+  CopyInternalLink,
 } from '../elements';
 
 // Import Components
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const ContactPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -60,9 +60,11 @@ const ContactPage = ({ data, location }) => {
 
   return (
       <Layout location={location} title={siteTitle}>
-      <SEO title="Contact" />
+      <Seo title="Contact" />
       <Container>
-        <h1>Contact</h1>
+        <h1>Hello!</h1>
+        <p>Questions, advice or just want to say hello?<br />I'd love to hear from you. Just fill out the form below.</p>
+        <p>Or connect with me on <CopyInternalLink href="https://linkedin.com/in/martin-guzman-ca" target="_blank">LinkedIn</CopyInternalLink>.</p>
         <ContactForm
           name="contact"
           method="post"

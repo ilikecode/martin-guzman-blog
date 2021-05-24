@@ -7,14 +7,14 @@ import { Container, } from '../elements'
 
 // Import Components
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="404: Not Found" />
+      <Seo title="404: Not Found" />
       <Container>
         <h1>Oppsies</h1>
         <p>404: Not Found</p>
