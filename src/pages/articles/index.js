@@ -18,27 +18,27 @@ import {
   
 // Import Components
 import Layout from '../../components/layout'
-import SEO from '../../components/seo'
+import Seo from '../../components/seo'
 import ArticleList from '../../components/articles/articlelist'
 import ArrowSVG from '../../components/svg/svgarrow'
-  
+
 const ArticlePage = ({ data, location }) => {
  
 const posts = data.allMarkdownRemark.nodes
   return (
     <Layout location={location}>
-      <SEO title="Articles" />
+      <Seo title="Articles" />
       <Container>
         <h1>Articles</h1>
         <ArticleList posts={posts} key={posts.id} />
-          <ViewAllButton>
-            <ViewAllLink to="/articles/tags">
-            <ViewAllText>View Articles by Category</ViewAllText>
-              <ViewAllArrow>
-                <ArrowSVG />
-              </ViewAllArrow>
-            </ViewAllLink>  
-          </ViewAllButton>
+        <ViewAllButton>
+          <ViewAllLink to="/articles/tags">
+          <ViewAllText>View Articles by Category</ViewAllText>
+            <ViewAllArrow>
+              <ArrowSVG />
+            </ViewAllArrow>
+          </ViewAllLink>  
+        </ViewAllButton>
       </Container>
     </Layout>
   )

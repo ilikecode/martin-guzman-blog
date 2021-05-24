@@ -19,17 +19,15 @@ import {
   CardReadMore,
   CardReadMoreContainer,
   CardReadMoreArrow,
-
-
-    ViewAllButton,
-ViewAllLink,
-ViewAllArrow,
-ViewAllText,
+  ViewAllButton,
+  ViewAllLink,
+  ViewAllArrow,
+  ViewAllText,
 } from '../../elements/'
 
 // Import Components
 import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Seo from "../../components/seo"
 import ArrowSVG from '../../components/svg/svgarrow'
 
 const TagsPage = ({ data, location, title }) => {
@@ -39,7 +37,7 @@ const TagsPage = ({ data, location, title }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Articles Categories" />
+      <Seo title="Articles Categories" />
       <Container> 
         <h1>Articles Categories</h1>
         <ContainerCategoryCardGrid>
