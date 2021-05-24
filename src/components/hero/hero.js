@@ -14,9 +14,9 @@ import {
 const Hero = () => {
   return (
     <Container>
-			<h1>Hi, I'm Martin.</h1>
+			<h1>Hello, I'm Martin.</h1>
 			<HeroParagraph>Originally from Southern California, now living in Vancouver, BC, and I'm currently studying for my OSCP Certification.</HeroParagraph> 
-      <HeroParagraph>I'm a self-starter and top-ranked NCL CTF competitor, with a strong analytical mindset with skills in OSINT, penetration testing, scripting, security, and experience in multiple OS platforms. I have a passion for Cybersecurity, OSINT, CTF's and interested in making a difference.</HeroParagraph>
+      <HeroParagraph>A self-starter with a strong analytical mindset and a friendly personality. Skills in EDR/EPP, penetration testing, open-source intelligence, and scripting. Experienced with multiple OS platforms including Linux, Windows, Mac, IOS, Android, and more. Constantly learning new cybersecurity skills and researching the latest technology. Also, a top-ranked National Cyber League competitor who loves the challenge of testing my skillset against others and continually improving my knowledge and rankings.</HeroParagraph>
     </Container>
   )
 }
