@@ -3,9 +3,9 @@
   "private": true,
   "description": "A blog about cybersecurity, and OSInt.",
   "version": "0.1.0",
-  "author": "Martin Guzman <helloe@martin-guzman.com>",
+  "author": "Martin Guzman <hello@martin-guzman.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ilikecode/martin-guzman-blog/issues"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
@@ -39,9 +39,10 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
+    "google-fonts-plugin": "^5.0.2",
     "prettier": "2.3.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/ilikecode/martin-guzman-blog./#readme",
   "keywords": [
     "gatsby"
   ],
@@ -49,7 +50,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/ilikecode/martin-guzman-blog.git"
   },
   "scripts": {
     "build": "gatsby build",
