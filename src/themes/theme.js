@@ -1,4 +1,4 @@
-const theme = {
+const Theme = {
 	fonts: {
 		main: "Raleway, sans-serif"
 	},
@@ -55,4 +55,4 @@ const theme = {
 	}
 }
 
-export default theme;
+export default Theme;
