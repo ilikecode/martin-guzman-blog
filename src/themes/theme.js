@@ -1,4 +1,4 @@
-export default {
+const theme = {
 	fonts: {
 		main: "Raleway, sans-serif"
 	},
@@ -54,3 +54,5 @@ export default {
 		shadowpurple: "0 2px 5px rgba(67, 55, 200, .1), 3px 5px 10px rgba(67, 55, 200, .2)"
 	}
 }
+
+export default theme;
