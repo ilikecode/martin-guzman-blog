@@ -10,7 +10,7 @@ import {
   Container, 
   ContactForm,
   ContactFormButton,
-  CopyInternalLink,
+  CopyHrefLink
 } from '../elements';
 
 // Import Components
@@ -64,7 +64,7 @@ const ContactPage = ({ data, location }) => {
       <Container>
         <h1>Hello!</h1>
         <p>Questions, advice or just want to say hello?<br />I'd love to hear from you. Just fill out the form below.</p>
-        <p>Or connect with me on <CopyInternalLink href="https://linkedin.com/in/martin-guzman-ca" target="_blank">LinkedIn</CopyInternalLink>.</p>
+        <p>Or connect with me on <CopyHrefLink href="https://linkedin.com/in/martin-guzman-ca" target="_blank">LinkedIn</CopyHrefLink>.</p>
         <ContactForm
           name="contact"
           method="post"
