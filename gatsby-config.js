@@ -50,8 +50,6 @@ module.exports = {
         name: `assets`,
       },
     },
-
-
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -126,12 +124,13 @@ module.exports = {
       }
     },
     `gatsby-plugin-smoothscroll`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
+     {
+       resolve: `gatsby-plugin-google-analytics`,
+       options: {
+          trackingId: `UA-196940958-1`,
+          head: true,
+       },
+     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -150,6 +149,17 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Raleway`,
+            variants: [`300`, `400`,`500`]
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
