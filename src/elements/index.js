@@ -102,6 +102,7 @@ import {
   TagLink,
   CopyInternalLink,
   CopyIntroInternalLink,
+  CopyHrefLink,
 } from './links-hrefs'
 
 import { 
@@ -194,6 +195,7 @@ export {
   TagLink,
   CopyInternalLink,
   CopyIntroInternalLink,
+  CopyHrefLink,
 
   ListIcon,
   ListTags,

@@ -182,3 +182,35 @@ export const CopyIntroInternalLink = styled(Link)`
     transform-origin: left;
   }
 `
+
+export const CopyHrefLink = styled.a`
+  color: ${props => props.theme.colors.purple2};
+  position: relative;
+  font-size: 0.75rem;
+  transition: all 200ms ease-in-out;
+  border-bottom: 2px solid ${props => props.theme.colors.purple3};
+  text-decoration: none;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: ${props => props.theme.colors.purple1};
+    transition: transform 500ms;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+  &:hover {
+    color: ${props => props.theme.colors.purple1};
+    background-color: rgba(94, 82, 218, .175);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+`
